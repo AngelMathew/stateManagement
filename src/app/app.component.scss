@@ -1,0 +1,29 @@
+  .nav{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-between;
+    padding:.5em 0;
+  a{
+    text-decoration: none;
+  }
+  .home{
+    text-decoration: none;
+    grid-column: 2/4;
+    list-style-type: none;
+    padding:0px;
+  }
+  .cart{
+    text-decoration: none;
+    grid-column: 11/12;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+img{
+  width: 25px;
+  height: 25px;
+}

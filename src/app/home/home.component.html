@@ -1,0 +1,19 @@
+
+<div class="home">
+  <div class="intro">
+  <h2>New Arrival Items</h2>
+  <p>It’s a good practice to compose all your application state in a central store for easy management and data communication. So, basically, our state is a representation of our application that actually lives in the store.</p>
+  </div>
+  <div class="items">
+    <div class="item" *ngFor="let item of items">
+      <img src="{{item.imageUrl}}">
+      <p>{{item.title}}</p>
+      <p class="price">${{item.price}}</p>
+      <div class="buttonClass">
+       <img class="buttonClassImg" (click)="onAddtoCart(item)" src="../assets//images/cart.png">
+      <img class="buttonClassImg"  (click)="onAddtoFavourite(item)" src="../assets//images/heart.png">
+    </div>
+    </div>
+  </div>
+</div>
+

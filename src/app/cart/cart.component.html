@@ -1,0 +1,21 @@
+<div class="cart">
+<h2>My Shopping Bag</h2>
+<div class="table" *ngIf="tableRow.length>0">
+  <div class="head">
+    <p *ngFor="let header of tableHeader">{{header}}</p>
+  </div>
+  <div class="row" *ngFor="let item of tableRow">
+    <p (click)="deleteItem(item)" class="closeButton"><strong>X</strong></p>
+    <p>{{item.title}}</p>
+    <p>{{item.price}}</p>
+    <p>{{item.quantity}}</p>
+    <p>{{item.totalPrice}}</p>
+  </div>
+
+
+</div>
+<div class="table" *ngIf="tableRow.length===0">
+<p>Please add items to your cart !!</p>
+</div>
+
+</div>

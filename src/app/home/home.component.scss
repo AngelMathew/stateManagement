@@ -1,0 +1,56 @@
+.home{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  margin-top: 5em;
+}
+.intro{
+  h2{
+    color: #8842FF;
+  }
+  grid-column: 2/12;
+  text-align: center;
+  line-height: 2em;
+}
+.price{
+  color:#8842FF;;
+}
+.items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-column: 2/12;
+  margin-top: 5em;
+
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  margin:2em 2em;
+  align-items: center;
+  // border:1px solid grey;
+  box-shadow: 1px 5px 15px 5px #D2CEFF;
+  padding:3em;
+  flex-grow:1;
+  justify-content: center;
+  p{
+    margin:.5em;
+  }
+
+  .buttonClass{
+    display: flex;
+    flex-direction: row;
+
+  .buttonClassImg{
+    height: 25px;
+    width: 25px;
+    margin-right: .5em;
+    cursor: pointer;
+    }
+  }
+  img{
+    height: 230px;
+    width: 200px;
+  }
+}
+

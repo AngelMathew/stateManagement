@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Ubuntu&display=swap');
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+h1,h2,h3,h4,a{
+  font-family: 'Ubuntu', sans-serif;
+  color:#191919;
+}
+p{
+font-family: 'Asap', sans-serif;
+font-size: 1.2em;
+}
+a{
+font-size: 1.5em;
+}
